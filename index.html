@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>coding-incremental</title>
+  <meta name="description" content="An incremental game that lets you experience the joy of programming.">
+
+  <script defer src="main.js" charset="utf-8" type="text/javascript"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="loading-screen" style="visibility: visible;">
+    <p id="loading-text">Loading! &lt;3</p>
+  </div>
+
+  <h1>Your mission? To write code.</h1>
+
+  <button id="create-project">Create Project</button>
+  <p id="create-project-text"></p>
+
+  <!-- I've got no clue why, but tabindex lets you "select" the div, which allows us to intercept keyboard presses. -->
+  <div id="code-area" tabindex="0">
+    <span id="code"></span>
+    <span id="cursor">|</span>
+  </div>
+
+  <h3 id="stats-header">Stats</h3>
+  <p id="lines-of-code"></p>
+  <p id="projects"></p>
+  <p id="friend-production"></p>
+
+  <h3 id="upgrades-header">Upgrades</h3>
+  <button id="upgrade-developer-skill-level"></button>
+  <button id="get-developer-friend"></button>
+  <button id="upgrade-friends"></button>
+</body>
+
+</html>
